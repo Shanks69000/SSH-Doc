@@ -58,6 +58,8 @@ Une fois les modifications effectuées, on redémarre SSH pour appliquer les cha
 
 ``sudo systemctl restart ssh``
 
+---
+
 ## 5. Création et gestion des clés SSH
 
 ### 5.1. Génération d'une paire de clés SSH
@@ -78,6 +80,8 @@ Pour se connecter à VM2 sans mot de passe, il faut copier notre clé publique s
 
 On sera invité à entrer le mot de passe de la machine distante une dernière fois. SSH se chargera de copier notre clé publique dans le fichier **~/.ssh/authorized_keys** sur VM2.
 
+---
+
 ## 6. Connexion SSH sans mot de passe
 
 Une fois la clé publique configurée, on peut se connecter de VM1 à VM2 sans avoir à entrer de mot de passe :
@@ -85,6 +89,8 @@ Une fois la clé publique configurée, on peut se connecter de VM1 à VM2 sans a
 ``ssh user@172.16.10.2``
 
 Si tout est configuré correctement, on devrait être directement connecté à la machine distante.
+
+---
 
 ## 7. Transfert de fichiers avec SCP
 
@@ -95,6 +101,8 @@ Pour transférer des fichiers entre les machines via SSH, on utilise SCP. Par ex
 Et pour récupérer un fichier de VM2 vers VM1 :
 
 ``scp user@172.16.10.2:/chemin/vers/fichier.txt /chemin/local/``
+
+---
 
 ## 8. Bonnes pratiques de sécurité avec SSH
 
