@@ -50,9 +50,9 @@ Les fichiers de configuration se trouvent dans **/etc/ssh/sshd_config**. Si on s
 
 Modifie des paramètres comme :
 
-    Port : par défaut 22
-    PermitRootLogin : désactive l'accès root (no)
-    PasswordAuthentication : désactive l'authentification par mot de passe pour renforcer la sécurité (no si tu utilises des clés)
+- Port : par défaut 22
+- PermitRootLogin : désactive l'accès root (no)
+- PasswordAuthentication : désactive l'authentification par mot de passe pour renforcer la sécurité (no si tu utilises des clés)
 
 Une fois les modifications effectuées, on redémarre SSH pour appliquer les changements :
 
