@@ -78,6 +78,10 @@ Pour se connecter à VM2 sans mot de passe, il faut copier notre clé publique s
 
 ``ssh-copy-id user@172.16.10.2``
 
+si le port par defaut est changé :
+
+``ssh-copy-id -p (port modifié) user@172.16.10.2``
+
 On sera invité à entrer le mot de passe de la machine distante une dernière fois. SSH se chargera de copier notre clé publique dans le fichier **~/.ssh/authorized_keys** sur VM2.
 
 ---
@@ -87,6 +91,10 @@ On sera invité à entrer le mot de passe de la machine distante une dernière f
 Une fois la clé publique configurée, on peut se connecter de VM1 à VM2 sans avoir à entrer de mot de passe :
 
 ``ssh user@172.16.10.2``
+
+si le port par defaut est changé :
+
+``ssh -p  (port modifié) user@172.16.10.2``
 
 Si tout est configuré correctement, on devrait être directement connecté à la machine distante.
 
@@ -98,9 +106,17 @@ Pour transférer des fichiers entre les machines via SSH, on utilise SCP. Par ex
 
 ``scp /chemin/vers/fichier.txt user@172.16.10.2:/chemin/destination/``
 
+si le port par defaut est changé :
+
+``scp -P (pot modifié) /chemin/vers/fichier.txt user@172.16.10.2:/chemin/destination/``
+
 Et pour récupérer un fichier de VM2 vers VM1 :
 
 ``scp user@172.16.10.2:/chemin/vers/fichier.txt /chemin/local/``
+
+si le port par defaut est changé :
+
+``scp -P (pot modifié) user@172.16.10.2:/chemin/vers/fichier.txt /chemin/local/``
 
 ---
 
