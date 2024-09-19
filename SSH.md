@@ -108,7 +108,7 @@ Pour transférer des fichiers entre les machines via SSH, on utilise SCP. Par ex
 
 si le port par defaut est changé :
 
-``scp -P (pot modifié) /chemin/vers/fichier.txt user@172.16.10.2:/chemin/destination/``
+``scp -P (port modifié) /chemin/vers/fichier.txt user@172.16.10.2:/chemin/destination/``
 
 Et pour récupérer un fichier de VM2 vers VM1 :
 
@@ -116,7 +116,7 @@ Et pour récupérer un fichier de VM2 vers VM1 :
 
 si le port par defaut est changé :
 
-``scp -P (pot modifié) user@172.16.10.2:/chemin/vers/fichier.txt /chemin/local/``
+``scp -P (port modifié) user@172.16.10.2:/chemin/vers/fichier.txt /chemin/local/``
 
 ---
 
